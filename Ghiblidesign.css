@@ -1,0 +1,310 @@
+
+
+ body{
+
+    overflow-x: hidden;
+    margin:0;
+    background-color: white;
+
+}
+/*Navigationbar*/
+header{
+
+    height: 50px;
+    background-color: white;
+    border-bottom:solid;
+    border-color: black;
+
+
+}
+.logo{
+    /*Bild vertikal zentrieren*/
+    padding: 5px 0;
+    float: left;
+    border-radius: 100px;
+    margin-left:10px;
+
+}
+ul {
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li {
+
+    /* liste nach innen verschieben*/
+
+    float: right;
+    margin-right: 100px;
+}
+
+
+
+li a, .dropbtn {
+
+    display: inline-block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: ghostwhite;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/*Home*/
+.Home{
+    overflow: hidden;
+    overflow-y: scroll;
+    background-color: black;
+    background-image: url("GIF1.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.Home .heading h1 {
+
+    color:white;
+    max-width: 100%;
+    transition: transform 4s;
+
+    line-height:0;
+    margin-top: 25%;
+    margin-bottom:25px;
+    padding-bottom:0;
+
+
+   /* text-align: center;*/
+}
+
+.Home .heading h1:hover{
+    transform: rotateY(360deg);
+}
+.Home .heading h4 {
+
+    color:white;
+    margin-top:0;
+    padding-top: 0;
+    margin-bottom:0;
+    padding-bottom: 0;
+    text-align: center;
+    margin-right: 25px;
+}
+
+.Home .heading h2 {
+
+    color:white;
+    margin-top:0;
+    padding-top: 0;
+    margin-bottom:0;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.Home .heading h3 {
+    text-align: right;
+}
+
+/*Movies*/
+
+.h1{
+    margin-top: 0px;
+    text-align: center;
+    font-size: 80px;
+
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60%;
+    min-height: 500px;
+    margin: 200px auto 0;
+
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container .box
+{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: black;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.container .box .imgBox
+{
+    position: relative;
+    overflow: hidden;
+
+}
+.container .box .imgBox img
+{
+    max-width: 100%;
+    transition: transform 2s;
+}
+
+.container .box:hover .imgBox img
+{
+    transform: scale(1.2);
+}
+
+.container .box .details
+{
+    position: absolute;
+    top: 10px;
+    Left:10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0,.8);
+    transform: scaleY(0);
+    transition:  transform .5s;
+
+}
+.container .box:hover .details
+{
+    transform: scaleY(1);
+}
+.container .box .details .content
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+.container .box .details .content h2
+{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: white;
+}
+.container .box .details .content p
+{
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+/*Profil: Hayao Miyazaki */
+
+
+h1{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 100%;
+    transition: transform 2s;
+
+    margin-top: 400px;
+    margin-bottom: 500px;
+    width: 100%;
+    height: 20%;
+
+    text-align: center;
+    vertical-align: middle;
+
+    font-size: 75px;
+    color: black;
+}
+h1:hover{
+    transform: scale(1.2);
+
+
+}
+
+
+.Profil .canvas .Profilpicture{
+
+
+
+    height:400px;
+    width:700px;
+
+    margin-top: 100px;
+  margin-bottom: 50px;
+}
+ /*.canvas .Titel {
+
+
+    float: left;
+
+    margin: 0px;
+
+    transform: rotate(90deg);
+    font-size: 75px;
+
+
+}
+*/
+.Profil .Textblock{
+
+    display: block;
+    margin-top: 200px;
+
+    margin-left: 10%;
+    margin-right: 10%;
+
+    font-size: 20px;
+}
+
+
+/*footer*/
+
+footer{
+    margin-top: 200px;
+    width: 100%;
+    height:100px;
+    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+    color: grey;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:center
+}
+
